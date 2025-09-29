@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Struk Lelang</title>
+  <title>Struk Penjualan Lelang</title>
   <style>
     body {
       font-family: "Courier New", monospace;
       font-size: 12px;
+      line-height: 1.2;
       margin: 0;
       padding: 10px;
-      width: 8cm; /* ukuran lebar kertas */
+      width: 8cm; /* sesuaikan dengan lebar kertas printer */
+      white-space: pre; /* biar spasi tetap */
     }
-    .center { text-align: center; }
-    .right { text-align: right; }
-    .line { border-bottom: 1px dashed #000; margin: 4px 0; }
     @page {
-      size: 8cm auto; /* ukuran kertas */
+      size: 8cm auto; /* kertas continuous */
       margin: 5mm;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-family: sans-serif;
     }
   </style>
 </head>
 <body>
-  <div class="center">
-    <strong>PEGADAIAN</strong><br>
-    CABANG UPC BRI UNIT AEK S<br>
-    NPWP: 01.001.668.1.093.000<br>
-    JL KRAMAT RAYA, KENARI, S<br><br>
-    <strong>NOTA TRANSAKSI</strong><br>
-    PENJUALAN LELANG<br>
-  </div>
-  <div class="line"></div>
-  No Transaksi : 17389142672<br>
-  Golongan     : 1<br>
-  No Kredit    : 172232410001963<br>
-  Nama Nasabah : ERNITA BR SITQURUS<br>
-  NIK Nasabah  : 1209155203180001<br>
-  Tgl Transaksi: 07-02-2025<br>
-  Tgl Kredit   : 15-07-2024<br>
-  Jatuh Tempo  : 07-02-2025<br>
-  <div class="line"></div>
-  Harga Lelang : <span class="right">Rp 4.343.000</span><br>
-  Sisa Modal   : <span class="right">Rp 3.954.000</span><br>
-  Bea Lelang Beli : <span class="right">Rp 42.083</span><br>
-  PPN          : <span class="right">Rp 50.500</span><br>
-  Biaya Proses : <span class="right">Rp 138.000</span><br>
-  <div class="line"></div>
-  Uang Kelebihan: <span class="right">Rp 289.134</span><br>
-  <div class="line"></div>
-  Pembeli: JUNI ARI<br>
-  NIK: 1271092106860009<br>
-  Barang: SATU GELANG RT SUPER HOLO...<br>
-  <div class="line"></div>
-  <div class="center">
-    KASIR<br><br>
-    RAHMADAN SYAHPUTRA<br>
-    Fri Feb 07 14:44:27 WIB 2025
-  </div>
-  <script>
-    function printStruk() {
-      window.print();
-    }
-  </script>
-  <button onclick="printStruk()">Print</button>
+<pre>
+PEGADAIAN
+CABANG UPC BRI UNIT AEK S
+NPWP: 01.001.668.1.093.000
+JL KRAMAT RAYA, KENARI, S
+
+NOTA TRANSAKSI
+PENJUALAN LELANG
+------------------------------------
+No Transaksi   : 17389142672
+Golongan       : 1
+No Kredit      : 172232410001963
+Nama Nasabah   : ERNITA BR SITQURUS
+NIK Nasabah    : 1209155203180001
+Tgl Transaksi  : 07-02-2025
+Tgl Kredit     : 15-07-2024
+Jatuh Tempo    : 07-02-2025
+------------------------------------
+Harga Lelang   : Rp 4.343.000
+Sisa Modal     : Rp 3.954.000
+Bea Lelang Beli: Rp   42.083
+PPN            : Rp   50.500
+Biaya Proses   : Rp  138.000
+------------------------------------
+Uang Kelebihan : Rp  289.134
+------------------------------------
+Pembeli : JUNI ARI
+NIK     : 1271092106860009
+Barang  : SATU GELANG RT SUPER HOLO...
+------------------------------------
+
+KASIR
+RAHMADAN SYAHPUTRA
+Fri Feb 07 14:44:27 WIB 2025
+</pre>
+
+<button onclick="window.print()">Print</button>
 </body>
 </html>
