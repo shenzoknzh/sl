@@ -6,26 +6,35 @@
   <style>
     body {
       font-family: "Courier New", monospace;
-      font-size: 12px;
+      font-size: 10px;
       line-height: 1.2;
       margin: 0;
-      padding: 10px;
-      width: 8cm; /* sesuaikan dengan lebar kertas printer */
-      white-space: pre; /* biar spasi tetap */
+      padding: 0;
+      text-align: center; /* semua teks ke tengah */
+    }
+    pre {
+      display: inline-block; /* biar konten center di halaman */
+      text-align: left;      /* isi struk tetap rata kiri */
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      white-space: pre;
     }
     @page {
-      size: 8cm auto; /* kertas continuous */
-      margin: 5mm;
+      size: A4;  /* bisa ganti ke continuous kalau mau */
+      margin: 10mm;
     }
     button {
-      margin-top: 10px;
-      padding: 5px 10px;
+      margin-top: 20px;
+      padding: 5px 12px;
       font-family: sans-serif;
+      font-size: 14px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-<pre>
+  <pre>
 PEGADAIAN
 CABANG UPC BRI UNIT AEK S
 NPWP: 01.001.668.1.093.000
@@ -59,8 +68,10 @@ Barang  : SATU GELANG RT SUPER HOLO...
 KASIR
 RAHMADAN SYAHPUTRA
 Fri Feb 07 14:44:27 WIB 2025
-</pre>
+  </pre>
 
-<button onclick="window.print()">Print</button>
+  <div>
+    <button onclick="window.print()">Print</button>
+  </div>
 </body>
 </html>
